@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     classMethods: {
       associate: function(models) {
-        models.Post.hasOne(models.Comment);
+        Product.hasOne(models.Inventory);
       }
     }
   });
